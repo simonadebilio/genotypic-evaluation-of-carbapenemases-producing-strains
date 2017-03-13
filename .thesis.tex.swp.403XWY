@@ -148,13 +148,13 @@ Probably due to the few antibiotic options, there is a high mortality rate among
 
 Although 10 different variations of KPC have been described, the KPC-2 and KPC-3 are the most commonly identified \cite{WaltherRasmussen2007}.
 
-\subsection {Class B: metallo-$\beta$-lactamases}
+\section {Class B: metallo-$\beta$-lactamases}
 This class of beta-lactamases is resistant to the available beta-lactam antibiotics, but it is inhibited by metal ion chelators.
 They have a broad spectrum of activity: most of them are able to hydrolyse carbapenems, cephalosporins and penicillins.
 Chromosomal enzymes (including VIM, IMP, GIM, and SIM) found in environmental and opportunistic pathogenic bacteria, were the first metallo-beta-lactamases to be detected and studied.
 These enzymes were usually expressed in conjunction with at least one serine beta-lactamase \cite{Queenan2007}.
 
-\subsection{Class D: OXA beta-lactamases}
+\section{Class D: OXA beta-lactamases}
 This group of serine Beta-lactamases was firstly identified in Enterocateriaceae and Pseudomonas aeruginosa, and constitutes a separate class.
 The OXA beta-lactamases were described as penicillinases capable of hydrolysing oxacillin and cloxacillin.
 Out of the 102 unique OXA sequences which have currently been identified, 9 are extended spectrum beta-lactamases and more than 37 are considered to be carbapenemases.
@@ -293,7 +293,7 @@ Different phenotypic and genotypic analyses are used in order to identify the pa
 For this project, various techniques of on plate cultivation, and automated tools (i.e. Vitek2, and the GeneXpert system) have been used.
 
 \section{Sowing on plate}
-Initially the material is s on a culture medium containing a concentration of nutrients suitable for bacterial growth.
+Initially the material is sown on a culture medium containing a concentration of nutrients suitable for bacterial growth.
 Depending on the biological material, suitable solid terrains can be used. 
 Specific bacteria can be grown on terrains containing specific substances:
 \begin{itemize}
@@ -318,125 +318,21 @@ This is a chromogenic medium, specifically designed for the extended-spectrum be
 If sown on this terrain, the K. pneumoniae colonies show a green/blue colour, while the E. coli colonies show a pink/burgundy colour.
 \end{itemize}
 
-\section{Screening tests in infected patients}
+\subsection{Screening tests in infected patients}
 The carbapenemase-producing strains can spread rapidly in health facilities, and have a high clinical and epidemiological impact.
 The study of infected patients is crucial because they are the main source of contamination. 
 %proof read until here
-Screening tests should be effected by examining cultures grown on rectal swab samples, even if other locations can also be colonized (oropharynx, bladder, etc.).
+Screening tests should be effected on rectal swab samples, even if other locations can also be colonized, by cultural examination. (???)
+%Lo screening si effettua mediante esame colturale di un campione prelevato con tampone in sede rettale, pur essendovi la possibilità di colonizzazione anche in altre sedi (orofaringe, vescica...).
 
 Screening tests need to be sensitive, to give a rapid response, and have a low cost. 
-Meropenem is suggested to be used as the reference molecule to detect the presence of carbapenemases. This molecule offers the best compromise between sensitivity and specificity. 
+Meropenem is suggested to be used as reference molecule to define the presence of carbapenemases. This molecule offers the best compromise between sensitivity and specificity. 
 It is advisable to suspect the production of carbapenemases when there is a low sensitivity to meropenem with MIC $\ge 0,5 mg/l$, or a diameter of the inhibition zone $\le 25 mm$ (EUCAST).
-These values are particularly significant for E. coli and K. pneumoniae, while they have to be assessed with caution for other species. Sometimes meropenem MIC values of $0,5-1 mg/l$ can be due to an over-expression of the AmpC beta-lactamase, associated with a loss of porines.
+These values are particularly significant for E. coli and K. pneumoniae species, while they have to be assessed with caution for other species. Sometimes a meropenem MIC values of 0,5-1 mg/l can be due to an over-expression of the AmpC beta-lactamase associated with a loss of porines.
 
-Furthermore, an inhibition zone of $\le 25 mm$ may not highlight some strains, which have a diameter of the inhibition zone of $24-26 mm$. Therefore is suggested to use a screening threshold with a wider diameter ($\le 27 mm$).
-Meropenem antibiotics have a better specificity than imipenem and ertapenem.
-The use of ertapenem as an indicator with the same MIC value determines an increased sensitivity, but also a decreased specificity.
+Furthermore, an inhibition zone of $\le$25 mm may not highlight some strains, which have a diameter of the inhibition zone of 24-26 mm. For this reason is suggested to use a screening threshold with a wider diameter ($\le 27 mm$).
 
-%aggiungere tabella breakpoint
-
-The screening tests are made by:
-\begin{itemize}
-\item direct seeding on chromogenic terrains;
-\item direct seeding on McConkecy agar with a disk of meropenem antibiotic;
-\item enrichment in liquid terrains added with a carbapenem and seeding on McConkey agar.
-\end{itemize}
-
-\subsection{Seeding on chromogenic terrains}
-The method involves the direct seeding of the swab on specific chromogenic terrains with low sensitivity to carbapenems.
-This type of terrains allows to easily recognise suspect colonies, and the species involved.
-The sensitivity and specificity of the terrains need to be carefully evaluated: the use of less specific terrains can delay the disclosure of results.
-
-\subsection{Direct seeding on McConkey agar}
-The method involves the seeding of the swab on a McConkey agar plate.
-During the seeding half of the plate is covered  with the swab (usually a rectal swab), rotate of 90° and then drawn with a sterile loop. 
-This allow to spread the bacteria all over the plate and to make them grow separately in pure colonies.
-After the seeding a 10 $\mu g$ Meropenem disk is position in the denser sowed area.
-The plate is incubate for 16-24 hours at $\sim$35°C..
-
-During this work have been considered colonies with the typical Enterobacteriaceae morphology, that were grown inside the diameter of the inhibition zone.
-This test makes it easy to recognise the suspect colonies, and to report the results in a short time. 
-
-\subsection{Enrichment in liquid terrains added with a carbapenem and seeding on McConkey agar}
-
-This method is suggested by the Centers for Disease Control and Prevention.
- 
-This method involves the seeding of the rectal swab in 5 ml of Trytic Soy Broth containing  a 10 $\mu g$ meropenem disk. This is followed by a 18 hours incubation at 35°C.
-After this, a subculture is seeded on a McConkey agar plate and is incubated at room temperature for 24-48 hours.
-
-This test has a good sensitivity and makes it easy to recognise the colonies, but it requires a higher operational level than the previous methods.
-
-\section{The antibiogram}
-This test allows the in vitro evaluation of the bacteria sensitivity profile to various antibiotics.
-During this tests the microorganism is exposed to standard concentrations of different antibiotics.
-The most commonly methods, used in the microbiology laboratories are based on diffusion (i.e. the Kirby Bauer method), or on dilution (this method can be automate).
-
-The first method involves the placement of antibiotic disks on the plate, and the following evaluation of the diameter of their inhibition zone. 
-The second method allows to evaluate the Minimal Inhibitory Concentration (i.e. is the lowest antibiotic concentration necessary to inhibit the bacterial growth) for specific antibiotics.
-
-The diameter of the inhibition zone, as well as the MICs, are related to standard threshold values (i.e. breakpoints) for the different microorganism-antibiotic combinations.
-
-The breakpoint results can be converted into three categories of interpretation:
-\begin{itemize}
-\item sensitive (S), when the bacteria is killed or inhibited by the antibiotic;
-\item intermediate (I), when the bacteria need high concentrations of antibiotic to be inhibited;
-\item resistant (R), when the bacteria grows in presence of the antibiotic.
-\end{itemize}
-
-\subsection{Synergy tests}
-The synergy test is a method of combination that tests the strains resistance to carbapenemase in combination with a specific inhibitor for the carbapenemases:
-\begin{itemize}
-\item the ethylenediaminetetraacetic acid (EDTA) and dipicolinic acid (DPA) are able to inhibit metallo beta-lactamase producing bacteria;
-\item the phenylboronic acid (APB) is able to inhibit KPC enzymes, but it can give false positive results in the presence of AmpC;
-\item cloxacillin (CLX) combined with phenylboronic acid highlights AmpC producing strains associated with porines loss;
-\item temocillin highlights the high resistance level of OXA-48 strains.
-\end{itemize}
-
-During the test procedure some pure colonies are taken with a sterile loop and dilute in 3ml of sterile saline until a 0.5 McFarland concentration.
-Then, a sample is taken from the solution containing the inoculum, and is sown on a Agar Muller Hinton (MHA) plate (this medium contains meat extract, casein acid hydrolysate, and soluble starch). Here, at a distance of 15-22 mm, are placed the antibiotic disks of (?):
-\begin{itemize}
-\item meropenem (MRP10);
-\item meropenem and boronic acid (MR+BO);
-\item meropenem and dipicolinic acid (MR+DP);
-\item meropenem and cloxacillin (MR+CL);
-\item meropenem and ethylenediaminetetraacetic acid (MR+ED)
-\end{itemize}
-
-The plate is incubated for 18-24 hours in aerobic environment at 35°C.
-
-After the incubation period the inhibition zones are measured: these are proportionate to the microorganism sensitivity to the specific antibiotic. 
-In this way (?), the inhibition zone is proportionate to the minimum inhibitory concentration.
-
-\subsection{Automated systems}
-\subsubsection{VITEK® 2: recognition of phenotypic variants}
-VITEK® 2 is a fully automated system that performs bacterial identification and antibiotic susceptibility testing. (biomerieux)
-
-The procedure involves the use of VITEK® 2 GP or GN cards for the microbial identification (ID), and of VITEK® 2 AST cards, specific for the antibiogram. 
-
-Every card shows a unique bar code that act as a link between the card and the patient number.
-
-These cards have 64 wells (? in italiano si chiamano "pozzetti" ma non sono riuscita a trovare un corrispettivo se non questo) containing biochemical reagents or antibiotics. Every card has also a little tube that transfer the suspension into the wells.
-
-The suspension should have a concentration of 0,5-0,6 McFarland, and the colonies diluted in the saline buffer must be pure.
-
-Once the cassette is loaded the incubation ad reading of each card is done by the instrument.
-
-Thanks to the development of fluorescent substrate in both cards (GP or GN, and AST) this instrument is able to identify the accurate microorganism and to give us (??) its precise MIC converted into one of the three categories of interpretation (S, I, or R). (??)
-
-\subsubsection{GeneXpert®: recognition of genotypic variants}
-The Cepheid Xpert® CARBA-R test is diagnostics qualitative analysis designed to rapidly detect and differentiate gene sequences that give resistance to carbapenem antibiotics (ordine parole?).
-
-This test can identify the following genes: blaKPC, blaNDM, blaVIM, blaOXA-48, and blaIMP-1.
-
-This test uses samples collected from rectal swab 
-
-
-
-
-
-
-
-
+For epidemiological purposes 
 
 
 
