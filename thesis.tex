@@ -1,36 +1,92 @@
 \documentclass[11pt]{report}
-\title{\textbf{Genotypic Evaluation of Carbapenemases Producing Strains Isolated from Different Biological Materials}}
-\author{Simona Debilio}
-\date{23 March 2017}
+
 
 \usepackage{graphicx}
 \usepackage[utf8x]{inputenc}
 \usepackage{grffile}
 \usepackage[margin=1in]{geometry}
+\usepackage{multicol}
+\usepackage{afterpage}
 \usepackage[english]{babel}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{pgfplots}
 \usepackage{pgf-pie}
+\usepackage{hyperref}
 \usetikzlibrary{shadows}
 
 \setlength{\parindent}{0pt}
 
 \begin{document}
 
-\maketitle
+\afterpage{
+\newgeometry{}
+\begin{titlepage}
+\centering
+
+\mbox{
+\textsc{\LARGE Universit\`a degli Studi del Piemonte Orientale}
+}\\[.2cm]
+\textsc{\LARGE ``Amedeo Avogadro''}
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=2]{img/logo_uniupo.png}
+\label{}
+\end{figure}
+
+\mbox{
+\textsc{\Large Dipartimento di Scienze ed Innovazione Tecnologica}
+}\\[1cm]
+
+\Large Corso di Laurea in Scienze Biologiche\\
+\textsc{\Large Prova Finale}\\[1.5cm]
+
+
+
+{\LARGE \bfseries Genotypic Evaluation of \\Carbapenemases Producing Strains \\[0.2cm]Isolated from Different Biological Materials}
+
+
+\vfill
+
+% Authors
+\begin{multicols}{2}
+\begin{flushleft}
+	{\Large Relatrice:\\
+	Prof.ssa Elisa Gamalero\\[0.5cm]
+	Tutor Aziendale:\\
+	Dott. Andrea Rocchetti}
+\end{flushleft}
+\columnbreak
+\begin{flushright}
+	{\Large Candidata:\\
+	Simona Debilio}
+\end{flushright}
+\end{multicols}
+\vspace{1cm}
+Anno Accademico 2016 -- 2017
+\vspace{-2cm}
+
+\end{titlepage}
+\clearpage
+\restoregeometry
+}
 
 \tableofcontents
 
 \chapter{Introduction}
 One of the most important discoveries in human history has been the identification of substances that were able to fight and defeat bacterial infections.
-These substances, called “antibiotics”, had an extraordinary impact on the outcome of bacterial infections and, consequently, helped to extend life expectancy \cite{ventola2015antibiotic}.
+These substances, called ``antibiotics'', had an extraordinary impact on the outcome of bacterial infections and, consequently, helped to extend life expectancy \cite{ventola2015antibiotic}.
 
-The first antibiotic was penicillin, discovered by Sir Alexander Fleming in 1928 (Figure 1.1) and following developed by chemical companies.
+The first antibiotic was penicillin, discovered by Sir Alexander Fleming in 1928 (Figure \ref{fleming}) and following developed by chemical companies.
 
+%autore foto non trovato
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=1.10]{img/Fleming_piastra.jpg}
-\caption{"It has been demonstrated that a species of penicillium produces in culture a very powerful antibacterial substance which affects different bacteria in different degrees. Generally speaking it may be said that the least sensitive bacteria are the Gram-negative bacilli, and the most susceptible are the pyogenic cocci. [...] In addition to its possible use in the treatment of bacterial infections penicillin is centainly useful [...] for its power of inhibithing unwanted microbes on bacterial cultures so that penicillin insensitive bacteria can readily be isolated." Alexander Fleming }
-\label{}
+\includegraphics[scale=1.10]{img/fleming.jpg}
+\caption{"It has been demonstrated that a species of penicillium produces in culture a very powerful antibacterial substance which affects different bacteria in different degrees. Generally speaking it may be said that the least sensitive bacteria are the Gram-negative bacilli, and the most susceptible are the pyogenic cocci. [...]
+In addition to its possible use in the treatment of bacterial infections penicillin is centainly useful [...] for its power of inhibithing unwanted microbes on bacterial cultures so that penicillin insensitive bacteria can readily be isolated."\\
+Alexander Fleming}
+\label{fleming}
 \end{figure}
 
 \clearpage
@@ -41,41 +97,42 @@ This renewed spread of bacterial infections is due to the emergence of bacterial
 
 The main causes that have provoked this antibiotic resistance crisis, which is occurring worldwide, are antibiotic overuse and misuse.
 In addition, there has been a lack in the development of new drugs by the pharmaceutical industry \cite{nature2013}.
-Overall, this situation has a huge impact on human health (Figure 1.2).
+Overall, this situation has a huge impact on human health (Figure
+\ref{spread2050}).
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.80]{img/Antimicrobial_Spread2050.png}
-\caption{In 2014 the UK Government commissioned the Review on Antimicrobial Resistance (AMR) to analyse the global problem of rising drug resistance. The process was completed in two years and some projections, based on the data gathered, showed that an increase in infection rates could mean 150 million people dying between now and 2050 \cite{review2014antimicrobial}}
-\label{}
+\includegraphics[scale=0.80]{img/spread2050.png}
+\caption{In 2014 the UK Government commissioned the Review on Antimicrobial Resistance (AMR) to analyse the global problem of rising drug resistance. The process was completed in two years and some projections, based on the data gathered, showed that an increase in infection rates could mean 150 million people dying between now and 2050 (Source: ``Antimicrobial Resistance: Tackling a Crisis for the Health and Wealth of Nations: December 2014'' \cite{review2014antimicrobial})}
+\label{spread2050}
 \end{figure}
 
 As epidemiological studies have shown there is a direct relationship between the use of antibiotics and the emergence and spread of resistant bacteria strains \cite{huttner2013antimicrobial}.
 
-Resistance can arise spontaneously through mutation (Figure 1.3), but it can also be acquired from genetic elements inherited from other bacteria.
+Resistance can arise spontaneously through mutation (Figure \ref{mutation}), but it can also be acquired from genetic elements inherited from other bacteria.
 The acquisition of mobile genetic elements (i.e. plasmids) is called “horizontal gene transfer”, and it allows not only the transfer among different members of the same species, but also among members of different species.
 
-\clearpage
 Furthermore, antibiotics cause the death of drug sensitive competitors, leaving only the resistant bacteria alive and able to reproduce themselves as the result of natural selection \cite{doi:10.1093/emph/eou024}.
 
+\clearpage
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.57]{img/Bacteria_Resistance.png}
-\caption{Most microbes can evolve rapidly thanks to their short reproductive cycle. During these frequent replications, mutations can arise; some of them can help the microbe surviving the exposure to antibiotics \cite{NHI_DrugResistance}.}
-\label{}
+\includegraphics[scale=0.57]{img/mutation.png}
+\caption{Most microbes can evolve rapidly thanks to their short reproductive cycle. During these frequent replications, mutations can arise; some of them can help the microbe surviving the exposure to antibiotics (Source: ``Mutation Causes Drug Resistance'' \cite{mutation}).}
+\label{mutation}
 \end{figure}
 
 One way we can limit the spread of antibiotic resistant strains is by minimising the natural selection for resistance genes.
 This can be achieved by reducing the use of antibiotics, avoiding their use unless it is strictly necessary, and enhancing infection prevention (e.g. isolating infected patients, and improving the hygiene).
 
-Moreover, it is necessary to stop abusing antibiotics in agriculture \cite{Spellberg2014} \cite{doi:10.1093/emph/eou024} (Figure 1.4).
+Moreover, it is necessary to stop abusing antibiotics in agriculture \cite{Spellberg2014} \cite{doi:10.1093/emph/eou024} (Figure \ref{farm}).
 The excessive use of antibiotics in agriculture can lead to antibiotic resistance, due to the spread of molecules from the animal faeces to soil, water, and food. This phenomenon can cause the  involuntary ingestion of antibiotics in humans, and strengthening the natural selection for the microorganisms.
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.57]{img/Agricultural_Spread.jpg}
-\caption{Antibiotics, when given to animals, kill most of the bacteria living in their intestines. Resistant strains can multiply and spread in the environment from their faeces \cite{CDC_AntibioticResistance}.}
-\label{}
+\includegraphics[scale=0.57]{img/farm.jpg}
+\caption{Antibiotics, when given to animals, kill most of the bacteria living in their intestines. Resistant strains can multiply and spread in the environment from their faeces \cite{farm}.}
+\label{farm}
 \end{figure}
 
 \clearpage
@@ -83,7 +140,7 @@ Following the EU conference titled “The Microbial Threat”, which took place 
 Since 2001, the European Council has highlighted the importance of reinforcing epidemiological surveillance, and improved the supervision of laboratories. The council also highlighted the need to create a coordinated structure at national level, in order to prevent and control the spread of antibiotic resistances.
 In recent years Italy has seen the spread of Gram-negative bacteria, mostly belong to the \emph{Klebsiella pneumoniae} species that ascribed to the Enterobacteriaceae family, have become resistant to carbapenems (e.g. Imipenem and Meropenem).
 
-A dramatically increasing trend in resistance has been observed between 2009 and 2011: while only the 1,3$\%$ of \emph{K. pneumoniae} strains isolated from blood showed a resistance in 2009, the percentage rose to 16$\%$ in 2010, and 26.7$\%$ in 2011 repectively (Figure 1.5 e 1.6).
+A dramatically increasing trend in resistance has been observed between 2009 and 2011: while only the 1,3$\%$ of \emph{K. pneumoniae} strains isolated from blood showed a resistance in 2009, the percentage rose to 16$\%$ in 2010, and 26.7$\%$ in 2011 respectively (Figure 1.5 e 1.6).
 
 \begin{figure}[htp]
 \centering
@@ -122,12 +179,12 @@ Antibiotics are secondary metabolites produced naturally by bacteria and other s
 They are thought to primarily play a defensive function in natural environments.
 From a pharmacological point of view, antibiotics have revolutionised medicine, providing a universal cure for infectious diseases that were untreatable for centuries.
 Hundreds of molecules with antibacterial activity have been identified over the last century. They are divided into different classes based on different chemical characteristics that distinguish the pharmacologically active molecule.
-Although every antibiotic interferes with the survival of the bacteria at various levels, their mechanisms of action may differ singnificantly from one species to another.
-Antibiotics can alter the structures of bacterial cell wall or membrane, with the energy metabolism such as nucleic acids, and protein synthesis (Figure 2.1).
+Although every antibiotic interferes with the survival of the bacteria at various levels, their mechanisms of action may differ significantly from one species to another.
+Antibiotics can alter the structures of bacterial cell wall or membrane, with the energy metabolism such as nucleic acids, and protein synthesis (Figure \ref{ant_targ}).
 
 Depending on the types of antibiotic, there can be either bactericidal effects, that directly cause the death of microorganisms, or bacteriostatic effects, that cause the inhibition of the bacterial reproduction, but not their death \cite{Leekha2011}.
 
-Antibiotics distinguish themselves from other substances of microbial origin (e.g. toxins) because they can present high selectivity with regard to bacterial cells and low toxicity to eukaryotic cells. This mechemism is called selective toxicity. It allows antibiotics to eliminate the infections without damaging the hosts.
+Antibiotics distinguish themselves from other substances of microbial origin (e.g. toxins) because they can present high selectivity with regard to bacterial cells and low toxicity to eukaryotic cells. This mechanism is called selective toxicity. It allows antibiotics to eliminate the infections without damaging the hosts.
 
 Each antibiotic has its own spectrum of activities. For example, some antibiotics are effective on Gram-positive bacteria, while others are effective on Gram-negative bacteria.
 There are also broad-spectrum antibiotics, which could target many of the Gram-positive as well as Gram-negative bacteria.
@@ -140,48 +197,65 @@ This mechanism, which is called “selective toxicity”, allows them to elimina
 \clearpage
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.700]{img/Antibiotic_Targets.jpg}
-\caption{Antibiotics can have different modes of action: they can inhibit DNA, proteins, or cell wall  synthesis, but they can also interfere with the bacterial metabolism, or cause the impairment of nucleic acids.}
-\label{}
+\includegraphics[scale=0.4500]{img/ant_targ.png}
+\caption{Antibiotics can have different modes of action: they can inhibit DNA, proteins, or cell wall  synthesis, but they can also interfere with the bacterial metabolism, or cause the impairment of nucleic acids. (Source: ``Microbiology: a clinical approach'' \cite{microbiology})}
+\label{ant_targ}
 \end{figure}
 
 \section{$\beta$-lactam antibiotics}
 $\beta$-lactam antibiotics are a class of broad-spectrum antibiotics that contain a $\beta$-lactam ring in their molecular structures.
 The examples of $\beta$-lactam antibiotics are penicillin derivates, cephalosporins and carbapenems \cite{Pitout2005}.
-These antibiotics present a nucleus (6-aminopenicillanic acid) connected to different lateral chains that affect their pharmacokinetic peculiarities and their range of action (Figure 2.2).
+These antibiotics present a nucleus (6-aminopenicillanic acid) connected to different lateral chains that affect their pharmacokinetic peculiarities and their range of action (Figure \ref{beta_lact}).
 
 Penicillins have a bicyclic structure, where the $\beta$-lactam ring is the functional part of the molecule: if degraded the drug loses its effectiveness.
-$\beta$-lactam antibiotics are target many Gram-negative and Gram-positive bacteria.
+$\beta$-lactam antibiotics are target many Gram-negative and Gram-positive bacteria by inhibiting bacterial cell wall biosynthesis.
+
+Without cell wall, the bacterial cells would rupture due to the difference in osmolarity between the inside and the outside of the cell.
 
 \clearpage
-\begin{figure}[htp]
-\centering
-\includegraphics[scale=0.35]{img/beta_lacatams.jpg}
-\caption{Beta-lactam antibiotics are named after their beta-lactam ring: this is a four membered lactam with a nitrogen atom attached to the beta-carbon atom relative to the carbonyl.}
-\label{}
+\begin{figure}[ht]
+\label{beta_lactam} 
+  \noindent\begin{minipage}[b]{0.5\linewidth}
+    \includegraphics[width=.5\linewidth]{img/carbapenem.png} 
+    \caption*{Carbapenems} 
+  \end{minipage}%
+  \noindent\begin{minipage}[b]{0.5\linewidth}
+    \includegraphics[width=.5\linewidth]{img/cephalosporin.png} 
+    \caption*{Cephalosporins} 
+  \end{minipage}
+  \noindent\begin{minipage}[b]{0.5\linewidth}
+    \includegraphics[width=.5\linewidth]{img/penicillin.png} 
+    \caption*{Penicillins}
+  \end{minipage}%
+  \hfill
+  \noindent\begin{minipage}[b]{0.5\linewidth}
+    \includegraphics[width=.5\linewidth]{img/aztreonam.png} 
+    \caption*{Aztreonam} 
+  \end{minipage}%
+  \caption{Beta-lactam antibiotics are named after their beta-lactam ring: this is a four membered lactam with a nitrogen atom attached to the beta-carbon atom relative to the carbonyl.}
+  \label{beta_lact}
 \end{figure}
 
-without cell wall, the bacterial cells would rupture due to the difference in osmolarity between the inside and the outside of the cell.
+
 The substance that confers the resistance and rigidity to the cell wall is called peptidoglycan, an amino-sugar polymer.
 Peptidoglucan forms a mesh-like layer, consisting of glycosaminoglycan chains that interlinked with short peptides.
-The sugar component consists of alternating disaccharide of N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM), connected by a $\beta$(1,4) glycosidic linkage where the NAM is also attached to a chain of four amino acids (both D- and L- ).
+The sugar component consists of alternating disaccharide of N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM), connected by a $\beta$(1,4) glycosidic linkage where the NAM is also attached to a chain of four amino acids (both D- and L-).
 
 The repetitive polymer structure is resilient due to the third amino acid bonded to the NAM of a NAM-NAG chain, that is also tied to the fourth amino acid of a NAM on a parallel chain.
-Penicillins block the formation of the cross-linking bonds within the peptidoglycan, therefore compromising their development in bacterial the cell wall synthesis (Figure 2.3).
+Penicillins block the formation of the cross-linking bonds within the peptidoglycan, therefore compromising their development in bacterial the cell wall synthesis (Figure \ref{pept}).
 The development of these bonds is catalysed by a class of enzymes called “penicillin binding proteins” (PBP).
 These enzymes are able to remove one of the two residues of D-alanine placed at the end of the NAM pentapeptide.
+
+$\beta$-lactam antibiotics are able to inhibit PBP enzymes via a competitive mechanism: the similarity of $\beta$-lactam antibiotics chemical structures to the D-alanine D-alanine dimer in peptidoglycan has allowed the antibiotics to become competitor substrates for PBP binding.
+When the enzyme binds to the antibiotic, an acyl-enzyme stable complex will be formed; this inactivates the enzymatic activity where the PBP will no longer be capable of catalysing the peptidoglycan synthesis reactions, and lead to the death of the growing bacterial cells \cite{kong2010beta}.
 
 \clearpage
 \begin{figure}[htp]
 \centering
 \includegraphics[scale=0.50]{img/Peptidoglycan.jpg}
 \caption{The peptidoglycan is synthesised in three different locations during three different stages: the first occurs in the cytoplasm, where the Lipid I is synthesised; the second takes place in the cytoplasmatic membrane where the Lipid I is transformed in the Lipid II and then flipped to the external side of the membrane, where the third stage occurs. During the last stage the Lipid II is linked to the nascent peptidoglycan by PBPs \cite{Pinho2013}}
-\label{}
+\label{pept}
 \end{figure}
-
-
-$\beta$-lactam antibiotics are able to inhibit PBP enzymes via a competitive mechanism: the similarity of $\beta$-lactam antibiotics chemical structures to the D-alanine D-alanine dimer in peptidoglycan has allowed the antibiotics to become competitor substrates for PBP binding.
-When the enzyme binds to the antibiotic, an acyl-enzyme stable complex will be formed; this inactivates the enzymatic activity where the PBP will no longer be capable of catalysing the peptidoglycan synthesis reactions, and lead to the death of the growing bacterial cells \cite{kong2010beta}.
 
 \subsection{Carbapenem antibiotics}
 A new era of $\beta$-lactam antibiotics, the carbapenems, has begun after the discovery of \emph{Streptomyces cattleya} and its antibiotic product, thienamycin.
@@ -216,7 +290,7 @@ There are three major families within the class A serine carbapenemases:
 
 \begin{itemize}
 \item not metalloenzyme carbapenemase (NMC);
-\item imipenem-hydrolyzing $\beta$-lactamase (IMI)/Serratia marcescens enzyme (SME); 
+\item imipenem-hydrolysing $\beta$-lactamase (IMI)/Serratia marcescens enzyme (SME); 
 \item Klebsiella pneumoniae carbapenemase (KPC).
 \end{itemize}
 
@@ -267,6 +341,7 @@ One of the most common Enterobacteria that have been isolated in humans is Klebs
 Some strains belonging to this \emph{genus}, particular the Klebsiella pneumoniae species, are showing resistance to almost every antibiotic available. 
 They are believed to be responsible for the largest number of nosocomial infections that are also known as health-care associated infection.
 
+\clearpage
 \section{Klebsiella}
 Klebsiella is a Gram-negative bacterium ascribed to the Enterobacteriaceae family.
 This microorganism has two common habitats: 
@@ -307,9 +382,9 @@ However, some carbapenemases, that belong to the molecular classes A, B or D, ca
 
 KPC is a type of $\beta$-lactamases enzymes, discovered from a sample of \emph{K. pneumoniae} isolated in North Carolina. At present, researchers have described more than twenty different KPC variants, and the most common are KPC-2 and KPC-3.
 
-The ST258 is the most common clone of KPC-producing K. pneumoniae.  
+The ST258 is the most common clone of KPC-producing \emph{K. pneumoniae}.  
 
-K. pneumoniae ST258 with KPC-2 and KPC-3 has been reported to contributed significantly to the dissemination of KPC enzymes worldwide \cite{Pitout2015}.
+\emph{K. pneumoniae} ST258 with KPC-2 and KPC-3 has been reported to contributed significantly to the dissemination of KPC enzymes worldwide \cite{Pitout2015}.
 
 Scientists have identified a number of different KPC-containing plasmids in ST258. These plasmids often contain various genes encoding nonsusceptibility to different antimicrobial drugs \cite{Pitout2015}.
 
@@ -335,9 +410,10 @@ This phenomenon has had particular relevance in countries such as the United Sta
 The spread of carbapenemases across different strains is probably due to the dissemination of mobile genetic elements that can transfer their resistance genes to other microorganisms.
 One of the causes for the spread of KPC epidemic clones is patient transfers either between different hospitals, or countries \cite{circolare2013}.
 
+\clearpage
 \subsection{Treatment of infections due to carbapenemases-producing \emph{K. pneumoniae}}
 Mortality rates due to \emph{K. pneumoniae} infections are typically between 23$\%$ and 75$\%$ \cite{karaiskos2014multidrug}.
-The high mortality rate is mainly due to limited therapy options. It is ineffective to treat this type of infections with a single type of antibiotic. Although there are no established optimal strategies of using the currently available antibiotics to cure carbapenemase-producing K.pneumoniae infections, severe infections due to a carbapenemase-producing K. pneumoniae strain could justify the use of a combination antibiotics therapy that includes colistin and a carbapenem, or an aminoglycoside.
+The high mortality rate is mainly due to limited therapy options. It is ineffective to treat this type of infections with a single type of antibiotic. Although there are no established optimal strategies of using the currently available antibiotics to cure carbapenemase-producing \emph{K.pneumoniae} infections, severe infections due to a carbapenemase-producing \emph{K. pneumoniae} strain could justify the use of a combination antibiotics therapy that includes colistin and a carbapenem, or an aminoglycoside.
 
 Often, the only antibiotics that show in vitro activity are polymyxins (e.g., colistin or polymyxin B), tigecycline, fosfomycin, and sometimes selected aminoglycosides \cite{rodriguez2015diagnosis}.
 For the reason that carbapenemase-producing bacteria are often resistant to other antibiotic classes too (i.e. fluoroquinolones and aminoglycosides), it is important to make susceptibility tests for antibiotics such as polymyxins (e.g. colistin), fosfomycin, tigecycline, and rifampin.
@@ -361,7 +437,7 @@ colistin-resistant \emph{K. pneumoniae} strains have already been reported \cite
 There are few other antibiotic available in Europe. Fosfomycin, for example, is commonly used in combination with tigecycline and colistin, to treat MDR bacteria infections \cite{pontikis2014outcomes}.
 Gentamicin remains in use for it is still effective against some KPC and OXA-48 producers.
 
-Carbapenems are still considered an antibiotic option, especially when the MICs of carbapenems are $\le 8mg/l$, to treat against carbapenemase-producing K. pneumoniae.
+Carbapenems are still considered an antibiotic option, especially when the MICs of carbapenems are $\le 8mg/l$, to treat against carbapenemase-producing \emph{K. pneumoniae}.
 
 This therapy could be successful when combined with a second antibiotic, or when a prolonged intravenous infusion regimen is used \cite{tzouvelekis2014treating, daikos2014carbapenemase, tumbarello2012predictors}.
 For example, animal studies have shown the potential effectiveness for dual-carbapenem therapy (e.g. meropenem and ertapenem to treat mouse pneumonia) 
@@ -396,7 +472,7 @@ The ECOFF values define the top end of the wild-type distribution: microorganism
 In order to find more effective therapies, and avoid the spread of antibiotic resistances, screening tests are required.
 Different phenotypic and genotypic analyses are used in order to identify the pathogens and their antibiotic resistances.
 
-For this project, various techniques of on plate cultivation, and automated tools (i.e. Vitek2, and the GeneXpert system) have been used.
+For this project, various techniques of on plate cultivation, and automated tools (i.e. \emph{VITEK}\textsuperscript{\textregistered}\emph{2}, and the \emph{GeneXpert} system) have been used.
 
 \section{Sowing on plate}
 Initially the material is s on a culture medium containing a concentration of nutrients suitable for bacterial growth.
@@ -418,13 +494,13 @@ This is a selective and differential culture terrain for the identification of G
 Since it contains crystal violet and bile salts, it is able to inhibit the growth of Gram-positive bacteria. 
 
 This medium contains lactose as the only source of carbohydrates, and the neutral-red pH indicator.
-The lactose fermenting bacteria, such as \emph{K. pneumoniae}, appear as red colonies (Figure 5.1) without precipitation of bile salts;
+The lactose fermenting bacteria, such as \emph{K. pneumoniae}, appear as red colonies (Figure \ref{Kleb_MAC}) without precipitation of bile salts;
 
 \begin{figure}[htp]
 \centering
 \includegraphics[scale=0.250]{img/KlebsiellaMAC.jpg}
 \caption{Klebsiella pneumoniae growing on MacConkey Agar \cite{KlebsiellaMAC}}
-\label{}
+\label{Kleb_MAC}
 \end{figure}
 
 \clearpage
@@ -436,7 +512,7 @@ If sown on this terrain, the \emph{K. pneumoniae} colonies show a green/blue col
 \section{Screening tests in infected patients}
 The carbapenemase-producing strains can spread rapidly in health facilities, and have a high clinical and epidemiological impact.
 The study of infected patients is crucial because they are the main source of contamination.
-Screening tests should be performed by examining cultures grown on rectal swab samples, even if other locations can also be colonized (oropharynx, bladder, etc.).
+Screening tests should be performed by examining cultures grown on rectal swab samples, even if other locations can also be colonised (oropharynx, bladder, etc.).
 
 Screening tests need to be sensitive, to give a rapid response, and have a low cost.
 Meropenem is suggested as the reference molecule to detect the presence of carbapenemases. This molecule offers the best compromise between sensitivity and specificity. 
@@ -533,17 +609,17 @@ Similarly, the inhibition zone is proportional to the minimum inhibitory concent
 
 \clearpage
 \subsection{Automated systems}
-\subsubsection{VITEK\textsuperscript{\textregistered} 2: recognition of phenotypic variants}
+\subsubsection{\emph{VITEK}\textsuperscript{\textregistered} 2: recognition of phenotypic variants}
 
 \begin{figure}[htp]
 \centering
 \includegraphics[scale=0.500]{img/Vitek_III.jpg}
-\caption{The Vitek2}
+\caption{The \emph{VITEK}\textsuperscript{\textregistered}\emph{2}}
 \label{}
 \end{figure}
 
-VITEK\textsuperscript{\textregistered} 2 is a fully automated system that performs bacterial identification, and antibiotic susceptibility testing \cite{Vitek2}.
-The procedure involves the use of VITEK\textsuperscript{\textregistered} 2 GP or GN cards for the microbial identification (ID), and VITEK\textsuperscript{\textregistered} 2 AST cards, specific for the antibiogram.
+\emph{VITEK}\textsuperscript{\textregistered}\emph{2} is a fully automated system that performs bacterial identification, and antibiotic susceptibility testing \cite{vitek2}.
+The procedure involves the use of \emph{VITEK}\textsuperscript{\textregistered}\emph{2} GP or GN cards for the microbial identification (ID), and \emph{VITEK}\textsuperscript{\textregistered}\emph{2} AST cards, specific for the antibiogram.
 Every card shows a unique bar code that act as a link between the card and the patient number.
 
 \begin{figure}[htp]
@@ -559,29 +635,29 @@ The suspension should have a concentration of $0,5-0,6$ McFarland, and the colon
 Once the cassette is loaded, the instrument incubates it and reads each card.
 By analysing the fluorescent substrate which develops onto both cards (GP or GN, and AST), the instrument is able to identify the microorganism and calculate its MIC, converted into one of the three categories of interpretation (S, I, or R).
 
-\subsubsection{GeneXpert\textsuperscript{\textregistered}: recognition of genotypic variants}
-The Cepheid Xpert\textsuperscript{\textregistered} CARBA-R test is a diagnostics qualitative analysis tool, designed to detect and differentiate gene sequences that give resistance to carbapenem antibiotics.
+\subsubsection{\emph{GeneXpert}\textsuperscript{\textregistered}: recognition of genotypic variants}
+The Cepheid \emph{GeneXpert}\textsuperscript{\textregistered} CARBA-R test is a diagnostics qualitative analysis tool, designed to detect and differentiate gene sequences that give resistance to carbapenem antibiotics.
 This test can identify the following genes: blaKPC, blaNDM, blaVIM, blaOXA-48, and blaIMP-1.
 
 \begin{figure}[htp]
 \centering
 \includegraphics[scale=1.00]{img/genexpert.jpg}
-\caption{The Gene Xpert}
+\caption{The \emph{GeneXpert}}
 \label{}
 \end{figure}
 
-The Xpert\textsuperscript{\textregistered} CARBA-R test performs a PCR (polymerase chain reaction) multiplex reaction of amplification, to detect specific DNA target sequences.
+The \emph{GeneXpert}\textsuperscript{\textregistered} CARBA-R test performs a PCR (polymerase chain reaction) multiplex reaction of amplification, to detect specific DNA target sequences.
 Every instrument contains a syringe for dispensing the sample, a ultrasonic horn for the cell lysis, and a thermal cycler for executing the PCR and detecting the target.
 While preparing the sample, some pure colonies are diluted in saline solution to a concentration of $0,5$ McFarland. 
 $20\mu l$ of the resulting solution are added to a specific reagent, then shaken for 10 seconds with a vortex mixer, and finally put in a specific disposable cartridge.
 
-The GeneXpert platform performs the subsequent steps: a filter captures the bacterial cells, and breaks them with ceramic marbles and a ultrasonic horn.
+The \emph{GeneXpert} platform performs the subsequent steps: a filter captures the bacterial cells, and breaks them with ceramic marbles and a ultrasonic horn.
 
 The solution containing the DNA is combined with the PCR dried reagents, and transferred into an optic tube were the real time PCR is performed.
 The whole process requires 60 minutes.
 
-%io direi "dati ottenuti e conclusioni" la divisione in due capitoli non mi piace tanto perchè non ho veramente molto da mettere nelle conclusioni e secondo me sta male fare un capitolo intero per scrivere 4 frasi.
-\chapter{lavoro svolto e dati ottenuti}
+\chapter{Work done and data obtained}
+%mi fa un po' cagare ma non saprei come altro dirlo
 
 The work was carried out in the microbiology laboratory at the hospital ``SS. Antonio e Biagio e C. Arrigo'' in Alessandria, between July 2016 and February 2017.
 
@@ -591,16 +667,16 @@ This test allows to identify which samples showed either a synergistic effect be
 
 The goal was to highlight which carbapenemases were the cause of the most diffused antibiotic resistances found in \emph{K. pneumoniae} in the local territory.
 
-38 samples were positive, and were further analysed, both from a phenotypic and genotypic point of view.
+Thirthy-eight samples were positive to the synergy test, and were further analysed, both from a phenotypic and genotypic point of view.
 
 \clearpage
 
 \subsubsection{Origin of the samples}
 
-The samples came from both male (24) and female (14) patients.
+The samples came from both male (63$\%$) and female (37$\%$) patients.
 
 Most of the patients were hospitalised, and especially coming from wards with long term stay, or had undergone surgical operations.
-The most represented wards were surgery (12), intensive care (7), and urology (7).
+The most represented wards were surgery (31,58$\%$), intensive care (18,42$\%$), and urology ($\%$) (Figure \ref{wards}).
 
 \begin{figure}[h!]
 \centering
@@ -612,9 +688,10 @@ The most represented wards were surgery (12), intensive care (7), and urology (7
 ]{2.63/Oncology, 2.63/Pediatric, 5.26/A\&E, 5.26/Infectious Diseases, 7.89/Hematology, 7.89/Internal Medicine, 18.42/Intensive Care, 18.42/Urology, 31.58/Surgery}
 \end{tikzpicture}
 \caption{Origin of the samples: Ward}
+\label{wards}
 \end{figure}
 
-The samples were mainly rectal swabs (16), blood samples (10), and urine samples (7).
+The samples were mainly rectal swabs (42,11$\%$), blood samples (26,32$\%$), and urine samples (18,42$\%$) (Figure \ref{clinical_mat}).
 
 \begin{figure}[h!]
 \centering
@@ -626,13 +703,14 @@ style=drop shadow
 ] {2.63/Bronchial Washing, 2.63/Drainage Liquid, 2.63/Secretion from  Surgical Wounds, 5.26/Skin Swab, 18.42/Urine Culture, 26.32/Blood, 42.11/Rectal Swab}
 \end{tikzpicture}
 \caption{Origin of the samples: Clinical material}
+\label{clinical_mat}
 \end{figure}
 
 \clearpage
 
-After the on plate isolation of pure colonies, in order to identify the antibiotic resistances, phenotypic tests were performed using the Vitek2.
+After the on plate isolation of pure colonies, in order to identify the antibiotic resistances, phenotypic tests were performed using the \emph{VITEK}\textsuperscript{\textregistered}\emph{2}.
 All the samples analysed were resistant to Piperacillin/Tazobactam and Cefotaxime, while antibiotics that still show a certain degree of effectiveness are Colistin, Fosfomycin, and Amikacin.
-Among the 38 samples, 8 showed resistances to all the antibiotics tested.
+Among the thirty-eight samples, the 21$\%$ showed resistances to all the antibiotics tested (Figure \ref{vitek})
 
 \begin{figure}[h!]
 \centering
@@ -726,18 +804,18 @@ xmax=40
 };
 
 \legend{Resistant, Indifferent, Sensitive}
-
 \end{axis}
 \end{tikzpicture}
-\caption{Simona}
+\caption{Determination of antibiotic resistance/sensitivity profile with \emph{VITEK}\textsuperscript{\textregistered}\emph{2}}
+\label{vitek}
 \end{figure}
 
 \clearpage
 
 After the phenotypic identification, the colonies were subjected to genotypic analysis to identify which antibiotic-resistant molecules were produced by the bacteria.
 
-Among the 38 samples, 34 were KPC positive, while 2 samples were OXA-48 positive.
-No sample was found to produce VIM, IMP or NDM carbapenemases.
+Among the thirty-eight samples, thirty-four were KPC positive, while two samples were OXA-48 positive.
+No sample (0$\%$) was found to produce VIM, IMP or NDM carbapenemases (Figure \ref{genexpert}).
 
 \begin{figure}[h!]
 \centering
@@ -780,61 +858,32 @@ ymax=40,
 \legend{Detected, Not Detected}
 \end{axis}
 \end{tikzpicture}
-\caption{Simona}
+\caption{Determination of genotypic variants with \emph{GeneXpert}}
+\label{genexpert}
 \end{figure}
 
-\chapter{Fairy tales and morals}
+\chapter{Final considerations}
 
-%Il totale dei casi analizatti ha mostrato resistenze.
-%In italia il problema delle resistenze, dla dato del 2015, è risultato essere x. questo ci pone tra i paaesi con ... (cit)
+As the ``Surveillance report'' of 2015 has highlighted, Italy reports a carbapenem resistance percentage of 33$\%$, making it one of the most affected by this issue \cite{ECDC_Surveillance}.
 
+All the samples analysed during this work showed antibiotic resistances, proving to be in line with the national data.
 
-The results obtained from the 38 samples are in line with 
+The increasing spread of antimicrobial-resistant \emph{K. pneumoniae} has become a public health concern of growing importance in Europe.
 
-The data collected show how antibiotic resistances in \emph{K. pneumoniae} are extremely widespread (?), and confirm that these resistances are due primarily to KPC enzymes.
+In order to deal with this problem, measures such as timely and appropriate laboratory reporting, screening and isolation of high-risk patients, and better infection control should be implemented.
 
-Since the growing spread of these antibiotic resistances is influenced by the selective pressure of broad-spectrum antibiotic therapies, this work also wanted to highlight how such therapies have become inadequate to control the spread of \emph{K. pneumoniae}.
+The data collected during this work showed that, among the carbapenemases producing strains analysed, the most represented were KPC carbapenemases.
 
-The awareness of the spread of this bacteria in a hospital setting, and its resulting clinical implications, makes the role of the microbiology laboratory fundamental. 
+Since the growing spread of these antibiotic resistances is influenced by the selective pressure of broad-spectrum antibiotic therapies, this work has taken into account also the antibiotic-resistances profiles, questioning the efficacy of current therapies.
+ 
+Even if the small number of samples analysed can't be considered statistically significant, the data collected shows that the efficacy of the most common antibiotics currently used is seriously compromised.
 
-An early detection of these infections makes it possible to implement programs for their containment and control, in addition it allows the start of targeted therapies.
+Given that Enterobacteriaceae infections are associated with higher health-care costs, prolonged hospital stays, treatment failure and mortality, the role of microbiology laboratories is fundamental to monitor the spread of such bacteria in hospital settings, and its resulting clinical implications.
 
 
 %mettere a posto:
-%correggere spelling usa vs uk
-%titolo ultimi capitoli 
+
 %citazioni immagini
-%controllare com'è scritto GeneXpert
-%mettere in corsivo i nomi commerciali
-%trovare stemma universita'
-
-%Luca sistema immagini 2.1 e 2.2 e 2.3
-%Luca fara' la pagina del titolo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \bibliography{references}
