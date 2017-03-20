@@ -1,6 +1,5 @@
 \documentclass[11pt]{report}
 
-\usepackage{graphicx}
 \usepackage[utf8x]{inputenc}
 \usepackage{grffile}
 \usepackage[margin=1in]{geometry}
@@ -12,6 +11,7 @@
 \usepackage{pgfplots}
 \usepackage{pgf-pie}
 \usepackage{hyperref}
+\usepackage{graphicx}
 \usetikzlibrary{shadows}
 
 \setlength{\parindent}{0pt}
@@ -29,7 +29,7 @@
 \textsc{\LARGE ``Amedeo Avogadro''}
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=2]{img/logo_uniupo.png}
+\includegraphics[scale=2]{img/uniupo.png}
 \label{}
 \end{figure}
 
@@ -73,21 +73,20 @@ Anno Accademico 2016 -- 2017
 One of the most important discoveries in human history has been the identification of substances that were able to fight and defeat bacterial infections.
 These substances, called ``antibiotics'', had an extraordinary impact on the outcome of bacterial infections and, consequently, helped to extend life expectancy \cite{ventola2015antibiotic}.
 
-The first antibiotic was penicillin, discovered by Sir Alexander Fleming in 1928 (Figure \ref{fleming}) and following developed by chemical companies.
+The first antibiotic was penicillin, discovered by Sir Alexander Fleming in 1928 (Figure \ref{eisenstaedt}) and following developed by chemical companies.
 
-%autore foto non trovato
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=1.10]{img/fleming.jpg}
+\includegraphics[scale=1.10]{img/eisenstaedt.jpg}
 \caption{``It has been demonstrated that a species of penicillium produces in culture a very powerful antibacterial substance which affects different bacteria in different degrees.
-Generally speaking it may be said that the least sensitive bacteria are the Gram-negative bacilli, and the most susceptible are the pyogenic cocci. [...]
-In addition to its possible use in the treatment of bacterial infections penicillin is certainly useful [...] for its power of inhibiting unwanted microbes on bacterial cultures so that penicillin insensitive bacteria can readily be isolated.''\\
-Alexander Fleming}
-\label{fleming}
+Generally speaking it may be said that the least sensitive bacteria are the Gram-negative bacilli, and the most susceptible are the pyogenic cocci. \ldots\ 
+In addition to its possible use in the treatment of bacterial infections penicillin is certainly useful \ldots\ for its power of inhibiting unwanted microbes on bacterial cultures so that penicillin insensitive bacteria can readily be isolated.'' \cite{fleming1929antibacterial}\\
+Alexander Fleming (Source: Alfred Eisenstaedt - Time Life Pictures/Getty \cite{eisenstaedt})}
+\label{eisenstaedt}
 \end{figure}
 
 \clearpage
-At first, antibiotics were used to treat serious infections in the 1940s, and they had similar positive outcomes worldwide \cite{Spellberg2014}.
+At first, antibiotics were used to treat serious infections in the 1940s, and they had similar positive outcomes worldwide \cite{spellberg2014}.
 
 Unfortunately, after many decades since the use of the first antibiotics on patients, bacterial infections began to spread again and, more importantly, became a threat again.
 This renewed spread of bacterial infections is due to the emergence of bacterial strains that are resistant to most of present antibiotics \cite{ventola2015antibiotic}.
@@ -95,14 +94,15 @@ This renewed spread of bacterial infections is due to the emergence of bacterial
 The main causes that have provoked this antibiotic resistance crisis, which is occurring worldwide, are antibiotic overuse and misuse.
 In addition, there has been a lack in the development of new drugs by the pharmaceutical industry \cite{nature2013}.
 Overall, this situation has a huge impact on human health (Figure
-\ref{spread2050}).
+\ref{antimicrobial2014}).
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.80]{img/spread2050.png}
+\includegraphics[scale=0.80]{img/antimicrobial2014.jpg}
 \caption{In 2014 the UK Government commissioned the Review on Antimicrobial Resistance (AMR) to analyse the global problem of rising drug resistance.
-The process was completed in two years and some projections, based on the data gathered, showed that an increase in infection rates could mean 150 million people dying between now and 2050 (Source: ``Antimicrobial Resistance: Tackling a Crisis for the Health and Wealth of Nations: December 2014'' \cite{review2014antimicrobial})}
-\label{spread2050}
+The process was completed in two years and some projections, based on the data gathered, showed that an increase in infection rates could mean 150 million people dying between now and 2050.\\
+(Source: ``Antimicrobial Resistance: Tackling a crisis for the health and wealth of nations. The Review on Antimicrobial Resistance. 2014 Dec'' \cite{antimicrobial2014})}
+\label{antimicrobial2014}
 \end{figure}
 
 As epidemiological studies have shown there is a direct relationship between the use of antibiotics and the emergence and spread of resistant bacteria strains \cite{huttner2013antimicrobial}.
@@ -110,21 +110,21 @@ As epidemiological studies have shown there is a direct relationship between the
 Resistance can arise spontaneously through mutation (Figure \ref{mutation}), but it can also be acquired from genetic elements inherited from other bacteria.
 The acquisition of mobile genetic elements (i.e. plasmids) is called ``horizontal gene transfer'', and it allows not only the transfer among different members of the same species, but also among members of different species.
 
-Furthermore, antibiotics cause the death of drug sensitive competitors, leaving only the resistant bacteria alive and able to reproduce themselves as the result of natural selection \cite{doi:10.1093/emph/eou024}.
+Furthermore, antibiotics cause the death of drug sensitive competitors, leaving only the resistant bacteria alive and able to reproduce themselves as the result of natural selection \cite{read2014}.
 
 \clearpage
 \begin{figure}[htp]
 \centering
 \includegraphics[scale=0.57]{img/mutation.png}
 \caption{Most microbes can evolve rapidly thanks to their short reproductive cycle.
-During these frequent replications, mutations can arise; some of them can help the microbe surviving the exposure to antibiotics (Source: ``Mutation Causes Drug Resistance'' \cite{mutation}).}
+During these frequent replications, mutations can arise; some of them can help the microbe surviving the exposure to antibiotics. (Source: ``Mutation Causes Drug Resistance'' \cite{mutation}).}
 \label{mutation}
 \end{figure}
 
 One way we can limit the spread of antibiotic resistant strains is by minimising the natural selection for resistance genes.
 This can be achieved by reducing the use of antibiotics, avoiding their use unless it is strictly necessary, and enhancing infection prevention (e.g. isolating infected patients, and improving the hygiene).
 
-Moreover, it is necessary to stop abusing antibiotics in agriculture \cite{Spellberg2014} \cite{doi:10.1093/emph/eou024} (Figure \ref{farm}).
+Moreover, it is necessary to stop abusing antibiotics in agriculture \cite{spellberg2014, read2014} (Figure \ref{farm}).
 The excessive use of antibiotics in agriculture can lead to antibiotic resistance, due to the spread of molecules from the animal faeces to soil, water, and food.
 This phenomenon can cause the involuntary ingestion of antibiotics in humans, and strengthening the natural selection for the microorganisms.
 
@@ -132,7 +132,8 @@ This phenomenon can cause the involuntary ingestion of antibiotics in humans, an
 \centering
 \includegraphics[scale=0.57]{img/farm.jpg}
 \caption{Antibiotics, when given to animals, kill most of the bacteria living in their intestines.
-Resistant strains can multiply and spread in the environment from their faeces \cite{farm}.}
+Resistant strains can multiply and spread in the environment from their faeces.\\
+(Source: ``Antibiotic Resistance from the Farm to the Table'' \cite{farm})}
 \label{farm}
 \end{figure}
 
@@ -142,21 +143,23 @@ Since 2001, the European Council has highlighted the importance of reinforcing e
 The council also highlighted the need to create a coordinated structure at national level, in order to prevent and control the spread of antibiotic resistances.
 In recent years Italy has seen the spread of Gram-negative bacteria, mostly belong to the \emph{Klebsiella pneumoniae} species that ascribed to the \emph{Enterobacteriaceae} family, have become resistant to carbapenems (e.g. Imipenem and Meropenem).
 
-A dramatically increasing trend in resistance has been observed between 2009 and 2011: while only the 1,3$\%$ of \emph{K. pneumoniae} strains isolated from blood showed a resistance in 2009, the percentage rose to 16$\%$ in 2010, and 26.7$\%$ in 2011 respectively (Figure 1.5 e 1.6).
+A dramatically increasing trend in resistance has been observed between 2009 and 2011: while only the 1,3$\%$ of \emph{K. pneumoniae} strains isolated from blood showed a resistance in 2009, the percentage rose to 16$\%$ in 2010, and 26.7$\%$ in 2011 respectively (Figures \ref{antimicrobial2009} and \ref{antimicrobial2015}).
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.60]{img/K.pneu_2009.png}
-\caption{Klebsiella pneumoniae: proportion of invasive isolates resistant to carbapenems in 2009 \cite{ECDC_Surveillance}.}
-\label{}
+\includegraphics[scale=0.60]{img/antimicrobial2009.png}
+\caption{Klebsiella pneumoniae: proportion of invasive isolates resistant to carbapenems in 2009.
+(Source: ``Antimicrobial resistance surveillance in Europe 2009. Annual report of the European Antimicrobial Resistance Surveillance Network (EARS-Net)'' \cite{antimicrobial2009})}
+\label{antimicrobial2009}
 \end{figure}
 
 \clearpage
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.60]{img/K.pneu_2015.png}
-\caption{Klebsiella pneumoniae: proportion of invasive isolates resistant to carbapenems in 2015 \cite{ECDC_Surveillance}.}
-\label{}
+\includegraphics[scale=0.60]{img/antimicrobial2015.png}
+\caption{Klebsiella pneumoniae: proportion of invasive isolates resistant to carbapenems in 2015.
+(Source: ``Antimicrobial resistance surveillance in Europe 2015'' \cite{antimicrobial2015})}
+\label{antimicrobial2015}
 \end{figure}
 
 These studies have confirmed the recent spread of multiresistant Enterobacteria in Italy, and they have shown why these bacteria represent a concrete threat for public health, as they are frequently the cause of infections, both in hospital and community environment \cite{circolare2013}.
@@ -164,7 +167,7 @@ These studies have confirmed the recent spread of multiresistant Enterobacteria 
 Clinical microbiology laboratories play an essential role in monitoring the spread of carbapenemase-producing Enterobacteria (CPE).
 This role entails significant demands upon laboratory staff and resources.
 For example, medical personnel must become familiar with a series of technical procedures for rapid identification of resistant bacterial strains in order to apply appropriate measures to contain their spread; this is required to allow effective and rapid application of appropriate infection controls in response.
-The potential clinical impacts upon patients also requires microbiologists undergo constant methodological, technical and organizational training.
+The potential clinical impacts upon patients also requires microbiologists undergo constant methodological, technical and organisational training.
 A timely identification of the antibiotic-resistant strains allows an effective implementation of control over a particular infection.
 
 \section{The definition of infectious diseases and transmission}
@@ -186,7 +189,7 @@ A disease can be classified when symptoms appear during the infection; asymptoma
 
 Contagious infectious diseases are caused by pathogens that are transmitted to receptive subjects.
 Infectious diseases which are not contagious require instead the intervention of suitable vectors under specific circumstances.
-Infectious diseases can be effectively prevented through either preventing exposure, or reducing susceptibility, to pathogens \cite{EPICentro}.
+Infectious diseases can be effectively prevented through either preventing exposure, or reducing susceptibility, to pathogens \cite{epicentro2014}.
 
 \chapter{What are antibiotics and how they work}
 Antibiotics are secondary metabolites produced naturally by bacteria and other soil microorganisms.
@@ -195,9 +198,9 @@ From a pharmacological point of view, antibiotics have revolutionised medicine, 
 Hundreds of molecules with antibacterial activity have been identified over the last century.
 They are divided into different classes based on different chemical characteristics that distinguish the pharmacologically active molecule.
 Although every antibiotic interferes with the survival of the bacteria at various levels, their mechanisms of action may differ significantly from one species to another.
-Antibiotics can alter the structures of bacterial cell wall or membrane, with the energy metabolism such as nucleic acids, and protein synthesis (Figure \ref{ant_targ}).
+Antibiotics can alter the structures of bacterial cell wall or membrane, with the energy metabolism such as nucleic acids, and protein synthesis (Figure \ref{microbiology}).
 
-Depending on the types of antibiotic, there can be either bactericidal effects, that directly cause the death of microorganisms, or bacteriostatic effects, that cause the inhibition of the bacterial reproduction, but not their death \cite{Leekha2011}.
+Depending on the types of antibiotic, there can be either bactericidal effects, that directly cause the death of microorganisms, or bacteriostatic effects, that cause the inhibition of the bacterial reproduction, but not their death \cite{leekha2011}.
 
 Antibiotics distinguish themselves from other substances of microbial origin (e.g. toxins) because they can present high selectivity with regard to bacterial cells and low toxicity to eukaryotic cells.
 This mechanism is called selective toxicity.
@@ -212,19 +215,19 @@ Consequently, knowledge of an antibiotic’s activity spectrum is required to de
 \clearpage
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.4500]{img/ant_targ.png}
+\includegraphics[scale=0.4500]{img/microbiology.jpg}
 \caption{Antibiotics can have different modes of action: they can inhibit DNA, proteins, or cell wall synthesis, but they can also interfere with the bacterial metabolism, or cause the impairment of nucleic acids.
-(Source: ``Microbiology: a clinical approach'' \cite{microbiology})}
-\label{ant_targ}
+(Source: ``Microbiology: A Clinical Approach'' \cite{microbiology})}
+\label{microbiology}
 \end{figure}
 
 \section{$\beta$-lactam antibiotics}
 $\beta$-lactam antibiotics are a class of broad-spectrum antibiotics that contain a $\beta$-lactam ring in their molecular structures.
-The examples of $\beta$-lactam antibiotics are penicillin derivatives, cephalosporins and carbapenems \cite{Pitout2005}.
+The examples of $\beta$-lactam antibiotics are penicillin derivatives, cephalosporins and carbapenems \cite{pitout2005}.
 These antibiotics present a nucleus (6-aminopenicillanic acid) connected to different lateral chains that affect their pharmacokinetic peculiarities and their range of action (Figure \ref{beta_lact}).
 
 Penicillins have a bicyclic structure, where the $\beta$-lactam ring is the functional part of the molecule: if degraded the drug loses its effectiveness.
-$\beta$-lactam antibiotics are target many Gram-negative and Gram-positive bacteria by inhibiting bacterial cell wall biosynthesis.
+$\beta$-lactam antibiotics target many Gram-negative and Gram-positive bacteria by inhibiting bacterial cell wall biosynthesis.
 
 Without cell wall, the bacterial cells would rupture due to the difference in osmolarity between the inside and the outside of the cell.
 
@@ -248,7 +251,8 @@ Without cell wall, the bacterial cells would rupture due to the difference in os
     \includegraphics[width=.5\linewidth]{img/aztreonam.png} 
     \caption*{Aztreonam} 
   \end{minipage}%
-  \caption{$\beta$-lactam antibiotics are named after their $\beta$-lactam ring: this is a four membered lactam with a nitrogen atom attached to the $\beta$-carbon atom relative to the carbonyl.}
+  \caption{$\beta$-lactam antibiotics are named after their $\beta$-lactam ring: this is a four membered lactam with a nitrogen atom attached to the $\beta$-carbon atom relative to the carbonyl.\\
+(Source: Wikipedia \cite{penicillin},\cite{cephalosporin},\cite{carbapenem}, and \cite{aztreonam})}
  \label{beta_lact}
 \end{figure}
 
@@ -258,7 +262,7 @@ Peptidoglycan forms a mesh-like layer, consisting of glycosaminoglycan chains th
 The sugar component consists of alternating disaccharide of N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM), connected by a $\beta$(1,4) glycosidic linkage where the NAM is also attached to a chain of four amino acids (both D- and L-).
 
 The repetitive polymer structure is resilient due to the third amino acid bonded to the NAM of a NAM-NAG chain, that is also tied to the fourth amino acid of a NAM on a parallel chain.
-Penicillins block the formation of the cross-linking bonds within the peptidoglycan, therefore compromising their development in bacterial cell wall synthesis (Figure \ref{pept}).
+Penicillins block the formation of the cross-linking bonds within the peptidoglycan, therefore compromising their development in bacterial cell wall synthesis (Figure \ref{round2013}).
 The development of these bonds is catalysed by a class of enzymes called ``penicillin binding proteins'' (PBP).
 These enzymes are able to remove one of the two residues of D-alanine placed at the end of the NAM pentapeptide.
 
@@ -268,19 +272,19 @@ When the enzyme binds to the antibiotic, an acyl-enzyme stable complex will be f
 \clearpage
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.50]{img/Peptidoglycan.jpg}
+\includegraphics[scale=0.50]{img/round2013.jpg}
 \caption{The peptidoglycan is synthesised in three different locations during three different stages: the first occurs in the cytoplasm, where the Lipid I is synthesised; the second takes place in the cytoplasmatic membrane where the Lipid I is transformed in the Lipid II and then flipped to the external side of the membrane, where the third stage occurs.
-During the last stage the Lipid II is linked to the nascent peptidoglycan by PBPs \cite{Pinho2013}}
-\label{pept}
+During the last stage the Lipid II is linked to the nascent peptidoglycan by PBPs. (Source: ``How to get (a)round: mechanisms controlling growth and division of coccoid bacteria'' \cite{round2013})}
+\label{round2013}
 \end{figure}
 
 \subsection{Carbapenem antibiotics}
 A new era of $\beta$-lactam antibiotics, the carbapenems, has begun after the discovery of \emph{Streptomyces cattleya} and its antibiotic product, thienamycin.
-After thienamycin, numerous carbapenems were discovered (i.e. imipenem, meropenem) \cite{Birnbaum1985}.
+After thienamycin, numerous carbapenems were discovered (i.e. imipenem, meropenem) \cite{birnbaum1985}.
 Carbapenems belong to the class of $\beta$-lactam of antibiotics.
 Unlike penicillins, carbapenems have a broader spectrum of activity, with greater effectiveness that is less likely to be affected by many of the most common mechanisms of antibiotic resistance.
 
-This group of antibiotics presents a remarkable activity against both Gram-positive, and Gram-negative bacteria that include \emph{Enterobacteriaceae}, \emph{Pseudomonas aeruginosa}, and \emph{Bacteroides} \cite{Neu1985}.
+This group of antibiotics presents a remarkable activity against both Gram-positive, and Gram-negative bacteria that include \emph{Enterobacteriaceae}, \emph{Pseudomonas aeruginosa}, and \emph{Bacteroides} \cite{neu1985}.
 
 Since carbapenems are more effective against infections caused by multidrug-resistant bacteria than other $\beta$-lactam antibiotics, they are primarily used in hospitalised patients.
 
@@ -289,7 +293,7 @@ Since carbapenems are more effective against infections caused by multidrug-resi
 The discovery and development of antibiotics are considered one of the major breakthroughs of modern medicine.
 The role of antibiotics has been essential in treating bacterial infections, and saving many lives.
 Unfortunately, time has seen the emergence and spread of antibiotic resistances among bacteria, weakening their effects.
-The development of combined resistances to multiple classes of antibiotics have brought to strains with multidrug-resistance (MDR) phenotypes, which can render traditional antibiotics completely ineffective \cite{Rossolini2014}.
+The development of combined resistances to multiple classes of antibiotics have brought to strains with multidrug-resistance (MDR) phenotypes, which can render traditional antibiotics completely ineffective \cite{rossolini2014}.
 
 Since $\beta$-lactams were the first antibiotics to be discovered, the resistance to this type of antibiotics was the first to emerge, and to be understood.
 The most effective way for bacteria to react to these antibiotics is by producing $\beta$-lactamases.
@@ -298,7 +302,7 @@ These enzymes are able to hydrolyse the $\beta$-lactam ring of the antibiotics a
 $\beta$-lactamases were traditionally classified based on either functional or structural characteristics in early studies.
 More recently, these enzymes have been classified based upon their amino acid homology.
 Four different molecular classes have been described; classes A, B, C and D.
-Molecular classes A, C, and D include the $\beta$-lactamases with serine at their active site, whilst class B $\beta$-lactamases are all metallo-enzymes with an active-site zinc \cite{Queenan2007}.
+Molecular classes A, C, and D include the $\beta$-lactamases with serine at their active site, whilst class B $\beta$-lactamases are all metallo-enzymes with an active-site zinc \cite{queenan2007}.
 
 \section{The carbapenemases}
 Carbapenemases are part of the classes A, B, and D of $\beta$-lactamases.
@@ -314,31 +318,31 @@ There are three major families within the class A serine carbapenemases:
 \item Klebsiella pneumoniae carbapenemase (KPC).
 \end{itemize}
 
-All these antibiotics are able to hydrolyse a broad variety of $\beta$-lactams (i.e. cephalosporins, penicillins, aztreonam) \cite{kong2010beta} \cite{Queenan2007}.
+All these antibiotics are able to hydrolyse a broad variety of $\beta$-lactams (i.e. cephalosporins, penicillins, aztreonam) \cite{kong2010beta} \cite{queenan2007}.
 
-The first KPC, KCP-1, was discovered in 1996 from a \emph{K. pneumoniae} isolated in North Carolina, USA.
+The first KPC, KPC-1, was discovered in 1996 from a \emph{K. pneumoniae} isolated in North Carolina, USA.
 
 The KPC family is able to hydrolyse penicillins, cephalosporins, monobactams, carbapenems, and even $\beta$-lactamase inhibitors.
-Although ten different variations of KPC have been described, only KPC-2 and KPC-3 are the most commonly identified \cite{WaltherRasmussen2007} \cite{MunozPrice2013}.
+Although ten different variations of KPC have been described, only KPC-2 and KPC-3 are the most commonly identified \cite{waltherRasmussen2007} \cite{munozPrice2013}.
 
-Gene blaKPC that encodes KCPs, is located within a Tn3-type transposon, a mobile genetic element with the capability of inserting into various plasmids of Gram-negative bacteria.
-The spread of many antibiotic resistances are often associated with plasmids carrying gene blaKPC \cite{Queenan2007}.
+Gene blaKPC that encodes KPCs, is located within a Tn3-type transposon, a mobile genetic element with the capability of inserting into various plasmids of Gram-negative bacteria.
+The spread of many antibiotic resistances are often associated with plasmids carrying gene blaKPC \cite{queenan2007}.
 
-Patients infected with KCP positive bacteria frequently suffer a high mortality rate – likely due to the lack of viable antibiotic options \cite{MunozPrice2013}
+Patients infected with KPC positive bacteria frequently suffer a high mortality rate – likely due to the lack of viable antibiotic options \cite{munozPrice2013}.
 
 \subsection {Class B: metallo-$\beta$-lactamases}
 This class of $\beta$-lactamases is resistant to the currently available $\beta$-lactam antibiotics, but inhibited by metal ion chelators.
 They have a broad spectrum of activity where most of them are able to hydrolyse carbapenems, cephalosporins and penicillins.
 
-Chromosomal enzymes, including imipenemases (IMP), Verona integron-encoded metallo-$\beta$-lattamasi (VIM), and German imipenemase (GIM), found in environmental and opportunistic pathogenic bacteria, were the first metallo-$\beta$-lactamases detected and studied.
-These enzymes were usually expressed in conjunction with at least one serine $\beta$-lactamase \cite{Queenan2007}.
+Chromosomal enzymes, including imipenemases (IMP), Verona integron-encoded metallo-$\beta$-lactamases (VIM), and German imipenemase (GIM), found in environmental and opportunistic pathogenic bacteria, were the first metallo-$\beta$-lactamases detected and studied.
+These enzymes were usually expressed in conjunction with at least one serine $\beta$-lactamase \cite{queenan2007}.
 
 \subsection{Class D: OXA $\beta$-lactamases}
 This group of serine $\beta$-lactamases was firstly identified in \emph{Enterocateriaceae} and \emph{Pseudomonas aeruginosa}, and constitutes a separate class.
 The OXA $\beta$-lactamases were described as penicillinases capable of hydrolysing oxacillin and cloxacillin.
 Out of the 102 unique OXA sequences which have currently been identified, nine are extended spectrum $\beta$-lactamases whereas more than 37 are considered to be carbapenemases.
 Among this group, the OXA-48 variant is plasmid encoded, and presents the highest hydrolysis rate among all the OXA enzymes.
-The OXA-48 was firstly found in a clinical \emph{K. pneumoniae} isolated in Turkey \cite{Poirel2012}.
+The OXA-48 was firstly found in a clinical \emph{K. pneumoniae} isolated in Turkey \cite{poirel2012}.
 
 \chapter{Carbapenemases producing strains: \emph{Enterobacteriaceae}}
 The \emph{Enterobacteriaceae} family includes a great variety of Gram-negative bacilli.
@@ -355,7 +359,7 @@ The K (capsular) antigen is a component of the polysaccharide capsule that surro
 The main task of this capsular structure is to avoid phagocytosis and, consequently, the activation of the complement.
 
 The O (somatic) antigen is responsible for the common symptoms of bacterial infections (i.e. fever, activation of the complement cascade and shock).
-The outer membrane of the bacterial cell contains lipopolysaccharide (LPS), where the lipid A (lipid component of LPS) portion is endotoxic, and the O (somatic, the polusaccharide) antigen is serotype specific \cite{guentzel1996escherichia}.
+The outer membrane of the bacterial cell contains lipopolysaccharide (LPS), where the lipid A (lipid component of LPS) portion is endotoxic, and the O (somatic, the polysaccharide) antigen is serotype specific \cite{guentzel1996}.
 
 The H antigens are flagellar proteins.
 They are known for their invasiveness, and ability to facilitate the ascension of uropathogenic bacteria from the bladder into the kidneys \cite{wiles2008origins}.
@@ -377,25 +381,26 @@ This microorganism has two common habitats:
 \end{itemize}
 
 Klebsiella mainly attacks immunocompromised individuals, especially if hospitalised.
-It is very serious and could be potentially fatal when premature infants are infected (it is often involved in neonatal sepsis), as well as those in the intensive care units \cite{podschun1998klebsiella}.
-Among the Klebsiella species, Klebsiella pneumoniae is the most clinically relevant; it is responsible for 70$\%$ of human infections \cite{Pitout2015}.
+It is very serious and could be potentially fatal when premature infants are infected (it is often involved in neonatal sepsis), as well as those in the intensive care units \cite{podschun1998}.
+Among the Klebsiella species, Klebsiella pneumoniae is the most clinically relevant; it is responsible for 70$\%$ of human infections \cite{pitout2015}.
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.30]{img/Klebsiella_pneumoniae.jpg}
-\caption{Scanning electron microscope image of Klebsiella pneumoniae}
-\label{}
+\includegraphics[scale=0.30]{img/klebsiella.jpg}
+\caption{Scanning electron microscope image of Klebsiella pneumoniae.\\
+(Source: Klebsiella Pneumoniae \cite{klebsiella})}
+\label{klebsiella}
 \end{figure}
 
-The most common sites of \emph{K. pneumoniase} colonization in humans are the gastrointestinal tract, and nasopharynx.
-It can cause not only pneumonia, but also infections in the urinary tract \cite{Pitout2015, podschun1998klebsiella}.
+The most common sites of \emph{K. pneumoniase} colonisation in humans are the gastrointestinal tract, and nasopharynx.
+It can cause not only pneumonia, but also infections in the urinary tract \cite{pitout2015, podschun1998}.
 
 In the last couple of decades, treating this kind of infection has been difficult due to the emergence and spread of drug-resistant strains of \emph{K. pneumoniae}.
 The resistance of \emph{K. pneumoniae} to antibiotics (such as cephalosporins, fluoroquinoles, and trimethoprim-sulfamethoxazole) that are often used as treatment options, delays the start of a proper therapy.
 This causes an increase in morbidity and mortality among patients.
 
-Whilst carbapenems seemingly the last line of effective therapy available for the treatment of infections caused by multidrug-resistant (MDR) \emph{K. pneumoniae}, the emerging resistance to carbapenems is growing great concern
- \cite{Pitout2015}.
+Whilst carbapenems are seemingly the last line of effective therapy available for the treatment of infections caused by multidrug-resistant (MDR) \emph{K. pneumoniae}, the emerging resistance to carbapenems is growing great concern
+ \cite{pitout2015}.
 
 \subsection{Mechanisms of resistance to carbapenems} 
 
@@ -410,12 +415,12 @@ At present, researchers have described more than twenty different KPC variants, 
 
 The ST258 is the most common clone of KPC-producing \emph{K. pneumoniae}.
 
-\emph{K. pneumoniae} ST258 with KPC-2 and KPC-3 has been reported to contributed significantly to the dissemination of KPC enzymes worldwide \cite{Pitout2015}.
+\emph{K. pneumoniae} ST258 with KPC-2 and KPC-3 has been reported to contributed significantly to the dissemination of KPC enzymes worldwide \cite{pitout2015}.
 
 Scientists have identified a number of different KPC-containing plasmids in ST258.
-These plasmids often contain various genes encoding nonsusceptibility to different antimicrobial drugs \cite{Pitout2015}.
+These plasmids often contain various genes encoding nonsusceptibility to different antimicrobial drugs \cite{pitout2015}.
 
-Metallo-$\beta$-lactamases (MBLs), a diverse set of enzymes that catalyze the hydrolysis of many $\beta$-lactam antibiotics, are another important group of $\beta$-lactamases.
+Metallo-$\beta$-lactamases (MBLs), a diverse set of enzymes that catalyse the hydrolysis of many $\beta$-lactam antibiotics, are another important group of $\beta$-lactamases.
 Bacteria with MBLs are often resistant to penicillins, carbapenems, cephalosporins, and cephamycins but remain susceptible to monobactams.
 Although they can be inhibited by metal chelators (such as Ethylenediaminetetraacetic acid and dipicolinic acid) the inhibitors to block metallo-$\beta$-lactamase action are presently unavailable clinically \cite{palzkill2013metallo}.
 
@@ -431,7 +436,7 @@ The first KPC-producing strain was isolated in 1996 in a hospital in North Carol
 In Italy, the first KPC-positive \emph{K. pneumoniae} was isolated in Florence in 2008.
 The isolated colonies presented a KPC-3 enzyme, with the corresponding gene located in transposon Tn4401.
 In 2009, a second report showed two KPC-2 positive \emph{K. pneumoniae} isolated in Rome.
-Between 2009 and 2011, the active surveillance in two hospitals located in Padua had aided the identification of almost two hundred cases of KPC-producing \emph{K. pneumoniae} \cite{MunozPrice2013}.
+Between 2009 and 2011, the active surveillance in two hospitals located in Padua had aided the identification of almost two hundred cases of KPC-producing \emph{K. pneumoniae} \cite{munozPrice2013}.
 
 The last ten years have shown a worldwide increasing spread of carbapenemase-producing Enterobacteriaceae (CPE) strains.
 This phenomenon has had particular relevance in countries such as the United States of America, Israel, Puerto Rico, Colombia, and Greece.
@@ -452,7 +457,7 @@ This is to ensure the correct and effective use of drugs because these antibioti
 Even though KPC-producing strains are usually resistant to all $\beta$-lactam antibiotics, some of them still show a certain susceptibility to temocillin.
 For example, NDM, VIM, and IMP producers are susceptible to aztreonam, while OXA-48 producers should be tested to verify their susceptibility to the expanded-spectrum cephalosporins \cite{girlich2009ctx}.
 Hence, combined therapies are often prescribed, as they can maximise bacterial killing (synergistic effect).
-More importantly, this strategy can potentially reduce the risk of bacteria becoming resistant \cite{Pitout2015}.
+More importantly, this strategy can potentially reduce the risk of bacteria becoming resistant \cite{pitout2015}.
 
 The mortality rate appears to be significantly lower in patients that have undergone combination therapies \cite{tzouvelekis2014treating, zavascki2013combination}
 The best antibiotic associations are resulted from the administration of two types of molecules showing in vitro activities against carbapenemase-producing strains \cite{falagas2013antibiotic, tzouvelekis2014treating}.
@@ -502,7 +507,7 @@ The ECOFF values define the top end of the wild-type distribution: microorganism
 In order to find more effective therapies, and avoid the spread of antibiotic resistances, screening tests are required.
 Different phenotypic and genotypic analyses are used in order to identify the pathogens and their antibiotic resistances.
 
-For this project, various techniques of on plate cultivation, and automated tools (i.e. \emph{VITEK}\textsuperscript{\textregistered}\emph{2}, and the \emph{GeneXpert} system) have been used.
+For this project, various techniques of on plate cultivation, and automated tools (i.e. \emph{VITEK}\textsuperscript{\textregistered}\emph{2}, and the \emph{GeneXpert\textsuperscript{\textregistered} IV} system) have been used.
 
 \section{Sowing on plate}
 Initially the material is sowed on a culture medium containing a concentration of nutrients suitable for bacterial growth.
@@ -524,13 +529,13 @@ This is a selective and differential culture terrain for the identification of G
 Since it contains crystal violet and bile salts, it is able to inhibit the growth of Gram-positive bacteria.
 
 This medium contains lactose as the only source of carbohydrates, and the neutral-red pH indicator.
-The lactose fermenting bacteria, such as \emph{K. pneumoniae}, appear as red colonies (Figure \ref{Kleb_MAC}) without precipitation of bile salts;
+The lactose fermenting bacteria, such as \emph{K. pneumoniae}, appear as red colonies (Figure \ref{klebsiellaMac}) without precipitation of bile salts;
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.250]{img/KlebsiellaMAC.jpg}
-\caption{Klebsiella pneumoniae growing on MacConkey Agar \cite{KlebsiellaMAC}}
-\label{Kleb_MAC}
+\includegraphics[scale=0.250]{img/klebsiellaMac.jpg}
+\caption{Klebsiella pneumoniae growing on MacConkey Agar. (Source: Gary E. Kaiser \cite{klebsiellaMac})}
+\label{klebsiellaMac}
 \end{figure}
 
 \clearpage
@@ -589,13 +594,14 @@ This test has a good sensitivity and helps to recognise the colonies, but it req
 \section{Determination of antibiotic resistance/sensitivity profile}
 This test allows the in vitro evaluation of the bacteria sensitivity profile to various antibiotics.
 During this test the bacterial strains is exposed to standard concentrations of different antibiotics.
-The most common methods, used in the microbiology laboratories are based on diffusion (i.e. the Kirby Bauer method) (Figure 5.2), or dilution (this method can be automated).
+The most common methods, used in the microbiology laboratories are based on diffusion (i.e. the Kirby-Bauer method - Figure \ref{kirbyBauer}), or dilution (this method can be automated).
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.800]{img/Kirby_Bouer.jpg}
-\caption{Kirby Bouer Test}
-\label{}
+\includegraphics[scale=0.800]{img/kirbyBauer.jpg}
+\caption{Kirby-Bauer Test. 
+(Source: ``Modified Kirby-Bauer disc diffusion method for Antimicrobial Susceptibility Testing'' \cite{kirbyBauer})}
+\label{kirbyBauer}
 \end{figure}
 
 The first method is based on the contact between the antibiotic disk and the bacterial colonies, followed by the measurement of the diameter of their growth inhibition halo.
@@ -632,13 +638,13 @@ Here, at a distance of $15-22 mm$, the following antibiotic disks are placed:
 
 The plate is then incubated for $18-24$ hours in aerobic environment at $35°C$.
 After the incubation, the inhibition zones are measured: these are proportional to the sensitivity of the microorganism to the specific antibiotic.
-Similarly, the inhibition zone is proportional to the minimum inhibitory concentration (Figure \ref{5disks}).
+Similarly, the inhibition zone is proportional to the minimum inhibitory concentration (Figure \ref{carlos3}).
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.93]{img/5disks.jpg}
-\caption{Determination of antibiotic resistance/sensitivity profile}
-\label{5disks}
+\includegraphics[scale=0.93]{img/carlos3.jpg}
+\caption{Determination of antibiotic resistance/sensitivity profile. (Source: \cite{carlos3})}
+\label{carlos3}
 \end{figure}
 
 \clearpage
@@ -647,9 +653,9 @@ Similarly, the inhibition zone is proportional to the minimum inhibitory concent
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.500]{img/Vitek_III.jpg}
-\caption{The \emph{VITEK}\textsuperscript{\textregistered}\emph{2}}
-\label{}
+\includegraphics[scale=0.500]{img/vitek2img.jpg}
+\caption{The \emph{VITEK}\textsuperscript{\textregistered}\emph{2}. (Source: \cite{vitek2img})}
+\label{vitek2}
 \end{figure}
 
 \emph{VITEK}\textsuperscript{\textregistered}\emph{2} is a fully automated system that performs bacterial identification, and antibiotic susceptibility testing \cite{vitek2}.
@@ -658,9 +664,9 @@ Every card shows a unique bar code that act as a link between the card and the p
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=0.20]{img/Vitek_Cards.jpg}
-\caption{Cards for identification of Gram-negative bacteria and the determination of their antibiotic resistance/sensitivity profile.}
-\label{}
+\includegraphics[scale=0.20]{img/vitekCards.jpg}
+\caption{Cards for identification of Gram-negative bacteria and the determination of their antibiotic resistance/sensitivity profile. (Source: Biomérieux \cite{vitekCards})}
+\label{vitekCards}
 \end{figure}
 
 These cards have 64 wells containing biochemical reagents or antibiotics.
@@ -677,8 +683,8 @@ This test can identify the following genes: blaKPC, blaNDM, blaVIM, blaOXA-48, a
 \begin{figure}[htp]
 \centering
 \includegraphics[scale=1.00]{img/genexpert.jpg}
-\caption{The \emph{GeneXpert}}
-\label{}
+\caption{The \emph{GeneXpert\textsuperscript{\textregistered} IV}. (Source: \cite{genexpert})}
+\label{GeneXpert}
 \end{figure}
 
 The \emph{GeneXpert}\textsuperscript{\textregistered} CARBA-R test performs a PCR (polymerase chain reaction) multiplex reaction of amplification, to detect specific DNA target sequences.
@@ -686,13 +692,12 @@ Every instrument contains a syringe for dispensing the sample, a ultrasonic horn
 While preparing the sample, some pure colonies are diluted in saline solution to a concentration of $0,5$ McFarland.
 $20\mu l$ of the resulting solution are added to a specific reagent, then shaken for 10 seconds with a vortex mixer, and finally put in a specific disposable cartridge.
 
-The \emph{GeneXpert} platform performs the subsequent steps: a filter captures the bacterial cells, and breaks them with ceramic marbles and a ultrasonic horn.
+The \emph{GeneXpert\textsuperscript{\textregistered}} platform performs the subsequent steps: a filter captures the bacterial cells, and breaks them with ceramic marbles and a ultrasonic horn.
 
 The solution containing the DNA is combined with the PCR dried reagents, and transferred into an optic tube were the real time PCR is performed.
 The whole process requires 60 minutes.
 
 \chapter{Work done and data obtained}
-%mi fa un po' cagare ma non saprei come altro dirlo
 
 The work was carried out in the microbiology laboratory at the hospital ``SS. Antonio e Biagio e C. Arrigo'' in Alessandria, between July 2016 and February 2017.
 
@@ -702,7 +707,7 @@ This test allows to identify which samples showed either a synergistic effect be
 
 The goal was to highlight which carbapenemases were the cause of the most diffused antibiotic resistances found in \emph{K. pneumoniae} in the local territory.
 
-Thirthy-eight samples were positive to the synergy test, and were further analysed, both from a phenotypic and genotypic point of view.
+Thirty-eight samples were positive to the synergy test, and were further analysed, both from a phenotypic and genotypic point of view.
 
 \clearpage
 
@@ -722,7 +727,7 @@ The most represented wards were surgery (\emph{31,58$\%$}), intensive care (\emp
 	style=drop shadow
 ]{2.63/Oncology, 2.63/Pediatric, 5.26/A\&E, 5.26/Infectious Diseases, 7.89/Hematology, 7.89/Internal Medicine, 18.42/Intensive Care, 18.42/Urology, 31.58/Surgery}
 \end{tikzpicture}
-\caption{Origin of the samples: Ward}
+\caption{Origin of the samples: Ward.}
 \label{wards}
 \end{figure}
 
@@ -737,7 +742,7 @@ rotate = 180,
 style=drop shadow
 ] {2.63/Bronchial Washing, 2.63/Drainage Liquid, 2.63/Secretion from Surgical Wounds, 5.26/Skin Swab, 18.42/Urine Culture, 26.32/Blood, 42.11/Rectal Swab}
 \end{tikzpicture}
-\caption{Origin of the samples: Clinical material}
+\caption{Origin of the samples: Clinical material.}
 \label{clinical_mat}
 \end{figure}
 
@@ -745,7 +750,7 @@ style=drop shadow
 
 After the on plate isolation of pure colonies, in order to identify the antibiotic resistances, phenotypic tests were performed using the \emph{VITEK}\textsuperscript{\textregistered}\emph{2}.
 All the samples analysed were resistant to Piperacillin/Tazobactam and Cefotaxime, while antibiotics that still show a certain degree of effectiveness are Colistin, Fosfomycin, and Amikacin.
-Among the thirty-eight samples, the \emph{21$\%$} showed resistances to all the antibiotics tested (Figure \ref{vitek})
+Among the thirty-eight samples, the \emph{21$\%$} showed resistances to all the antibiotics tested (Figure \ref{vitek}).
 
 \begin{figure}[h!]
 \centering
@@ -841,7 +846,7 @@ xmax=40
 \legend{Resistant, Indifferent, Sensitive}
 \end{axis}
 \end{tikzpicture}
-\caption{Determination of antibiotic resistance/sensitivity profile with \emph{VITEK}\textsuperscript{\textregistered}\emph{2}}
+\caption{Determination of antibiotic resistance/sensitivity profile with \emph{VITEK}\textsuperscript{\textregistered}\emph{2}.}
 \label{vitek}
 \end{figure}
 
@@ -850,7 +855,7 @@ xmax=40
 After the phenotypic identification, the colonies were subjected to genotypic analysis to identify which antibiotic-resistant molecules were produced by the bacteria.
 
 Among the thirty-eight samples, thirty-four were KPC positive, while two samples were OXA-48 positive.
-No sample (\emph{0$\%$}) was found to produce VIM, IMP or NDM carbapenemases (Figure \ref{genexpert}).
+No sample (\emph{0$\%$}) was found to produce VIM, IMP or NDM carbapenemases (Figure \ref{genexpertBar}).
 
 \begin{figure}[h!]
 \centering
@@ -893,13 +898,13 @@ ymax=40,
 \legend{Detected, Not Detected}
 \end{axis}
 \end{tikzpicture}
-\caption{Determination of genotypic variants with \emph{GeneXpert}}
-\label{genexpert}
+\caption{Determination of genotypic variants with \emph{GeneXpert}\textsuperscript{\textregistered}.}
+\label{genexpertBar}
 \end{figure}
 
 \chapter{Final considerations}
 
-As the ``Surveillance report'' of 2015 has highlighted, Italy reports a carbapenem resistance percentage of 33$\%$, making it one of the most affected by this issue \cite{ECDC_Surveillance}.
+As the ``Surveillance report'' of 2015 has highlighted, Italy reports a carbapenem resistance percentage of 33$\%$, making it one of the most affected by this issue \cite{antimicrobial2015}.
 
 All the samples analysed during this work showed antibiotic resistances, proving to be in line with the national data.
 
@@ -918,4 +923,4 @@ Given that \emph{Enterobacteriaceae} infections are associated with higher healt
 \bibliography{references}
 \bibliographystyle{unsrt}
 
-\end{document}http://www.lorenzopantieri.net/LaTeX_files/ArteLaTeX.pdf
+\end{document}
